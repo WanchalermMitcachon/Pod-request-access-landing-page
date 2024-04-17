@@ -50,7 +50,7 @@ function App() {
               <p className="desktop:max-w-[77%] desktop:text-[20px] tablet:text-start tablet:max-w-[77%] mobile:text-center mobile:text-[16px] text-gray-400">
                 Upload your audio to Pod with a single click. We’ll then
                 distribute your podcast to Spotify, Apple Podcasts, Google
-                Podcasts, Pocket Casts and more!
+                Podcasts, Pocket Casts and more!sdas
               </p>
               <div className="flex tablet:flex-col mobile:flex-col-reverse">
                 {/*  Email Button  */}
