@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* ปรับตำแหน่งให้ถูกต้องสำหรับ tablet */
+    .tablet-adjust {
+      left: 60px;
+      bottom:-250px
+    }
+  }
