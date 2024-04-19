@@ -5,6 +5,7 @@ import applePodcast from "./assets/desktop/apple-podcast.svg";
 import googlePodcasts from "./assets/desktop/google-podcasts.svg";
 import pocketcastPodcasts from "./assets/desktop/pocket-casts.svg";
 import bgPattern from "./assets/desktop/bg-pattern-dots.svg";
+
 function App() {
   const [emailErrorMessage, setEmailErrorMessage] = useState(null);
   const [email, setEmail] = useState("");
@@ -22,13 +23,16 @@ function App() {
     <>
       <div
         className="desktop:py-24 desktop:pl-24 tablet:bg-none mobile:bg-no-repeat mobile:bg-cover  mobile:bg-center 
-      mobile:h-screen mobile:bg-hostLogoMobile"
+      mobile:h-screen hostLogoMobile tablet:bg-[#121725] tablet:opacity-[0.7992919683456421]"
       >
         {/* Overlay */}
         <div
+          className="absolute inset-0 bg-[#121725] opacity-[0.7992919683456421] "
+        ></div>
+        {/* <div
           className="mobile:absolute mobile:inset-0 mobile:bg-gradient-to-br mobile:from-black 
         mobile:to-blue-800 mobile:opacity-70 tablet:hidden "
-        ></div>
+        ></div> */}
 
         <div
           className="desktop:grid-cols-[30%_70%] tablet:grid tablet:grid-cols-[40%_60%] tablet:py-0 tablet:pr-0 mobile:w-full
@@ -40,14 +44,14 @@ function App() {
               <img src={logo} alt="POD" />
             </div>
             {/* content box */}
-            <div className="desktop:w-[190%] desktop:h-[77%] desktop:pt-6  tablet:z-50 tablet:w-[220%] tablet:bg-black tablet:px-5 tablet:pt-[10%]">
-              <h1 className="text-green-300 desktop:text-[210%] tablet:text-start tablet:text-[215%] tablet:tracking-widest tablet:mt-12 mobile:text-center mobile:text-xl mobile:tracking-wider">
+            <div className="desktop:w-[40rem] desktop:h-[77%] desktop:pt-6  tablet:z-50 tablet:w-[35rem] tablet:h-[30rem] tablet:px-5 tablet:pt-[20%] tablet:bg-[#121725]">
+              <h1 className="text-green-300 desktop:text-[260%] tablet:text-start tablet:text-[215%] tablet:tracking-widest tablet:mt-12 mobile:text-center mobile:text-xl mobile:tracking-wider ">
                 PUBLISH YOUR PODCASTS{" "}
                 <span className="text-white block desktop:mt-8 tablet:mt-4 mobile:mt-2 mobile:mb-7">
                   EVERYWHERE.
                 </span>
               </h1>
-              <p className="desktop:max-w-[77%] desktop:text-[20px] tablet:text-start tablet:max-w-[77%] mobile:text-center mobile:text-[16px] text-gray-400">
+              <p className="desktop:max-w-[68%] desktop:text-[18px] tablet:text-start tablet:max-w-[70%] mobile:text-center mobile:text-[16px] text-gray-400 ">
                 Upload your audio to Pod with a single click. We’ll then
                 distribute your podcast to Spotify, Apple Podcasts, Google
                 Podcasts, Pocket Casts and more!
@@ -78,7 +82,7 @@ function App() {
                     </p>
                   )}
                 </div>
-                <div className="flex justify-center mt-10 gap-x-5 desktop:mt-14 desktop:gap-x-0 desktop:justify-start tablet:gap-x-12">
+                <div className="flex justify-center  gap-x-5 desktop:mt-14 desktop:gap-x-0 tablet:justify-start tablet:gap-x-6  mobile:mt-16">
                   <img
                     src={spotify}
                     alt="spotify"
@@ -105,16 +109,17 @@ function App() {
           </div>
           {/* Right Side */}
           <div
-            className="z-0 h-[77vh] hidden desktop:bg-hostLogoDesktop   desktop:relative  tablet:block tablet:w-auto 
-          tablet:bg-hostLogoTablet mobile:bg-cover mobile:bg-no-repeat mobile:bg-center "
+            className="z-0 h-[77vh] hidden  desktop:relative  hostLogoDesktop tablet:block tablet:w-auto  
+            hostLogoTablet mobile:bg-cover mobile: bg-no-repeat mobile:bg-center tablet:bg-[#121725] tablet:opacity-[0.7992919683456421] "
           >
             <img
               src={bgPattern}
               alt=""
-              className="absolute desktop:right-0  desktop:bottom-[-54px]  tablet-adjust  "
+              className="absolute desktop:right-0  desktop:bottom-[-54px]  tablet-adjust "
             />
           </div>
         </div>
+
       </div>
     </>
   );
