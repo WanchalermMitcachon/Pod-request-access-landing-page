@@ -44,8 +44,8 @@ function App() {
               <img src={logo} alt="POD" />
             </div>
             {/* content box */}
-            <div className="desktop:w-[40rem] desktop:h-[77%] desktop:pt-6  tablet:z-50 tablet:w-[35rem] tablet:h-[30rem] tablet:px-5 tablet:pt-[20%] tablet:bg-[#121725]">
-              <h1 className="text-green-300 desktop:text-[260%] tablet:text-start tablet:text-[215%] tablet:tracking-widest tablet:mt-12 mobile:text-center mobile:text-xl mobile:tracking-wider ">
+            <div className="desktop:w-[44rem] desktop:h-[77%] desktop:pt-6  tablet:z-50 tablet:w-[35rem] tablet:h-[30rem] tablet:px-5 tablet:pt-[20%] tablet:bg-[#121725]">
+              <h1 className="text-green-300 desktop:text-[250%] tablet:text-start tablet:text-[215%] tablet:tracking-widest tablet:mt-12 mobile:text-center mobile:text-xl mobile:tracking-wider ">
                 PUBLISH YOUR PODCASTS{" "}
                 <span className="text-white block desktop:mt-8 tablet:mt-4 mobile:mt-2 mobile:mb-7">
                   EVERYWHERE.
